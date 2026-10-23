@@ -7,7 +7,8 @@
 - Tests: 12 focused tests passing at the last checkpoint.
 - Build: Rollup build and public JavaScript syntax check passing at the last checkpoint.
 - Live evidence: capture completed on 2026-10-23 without transactions or spending. Query is `COMPLETE` with both venues available; deposit is `CONDITIONAL` with both venues available and two unsigned transactions; withdrawal is `PREPARED` with both venues available and one unsigned transaction; injected-outage evidence is `PARTIAL` with one venue still available. Manifest: `evidence/manifest.json`.
-- GitHub publication: public repository created at `https://github.com/shoupeorg/pharos-multi-protocol-aggregator`; push from the sandbox is blocked because Git Credential Manager cannot launch its prompt shell (`cannot spawn sh: No such file or directory`; `could not read Username for 'https://github.com'`).
-- Cloudflare D1/deployment: pending.
-- Exact next action: push the existing local `main` commit from a normal interactive Windows PowerShell, then perform the first deployment in a later authorized run.
+- GitHub publication: complete at `https://github.com/shoupeorg/pharos-multi-protocol-aggregator`.
+- Cloudflare D1/deployment: complete at `https://pharos-multi-protocol-aggregator.shoupeorg.workers.dev/`; deployed version `f8979a5f-ed41-42d7-b944-fe25e9132b10`.
+- Public verification: UI, logo/favicon asset, JavaScript, styles, `/api/meta`, `/api/runs`, and `/evidence/manifest.json` returned HTTP 200 with the expected content types. The UI loaded engine `multi-protocol-aggregator/1.0.0`, chain ID 1672, unsigned-only mode, and broadcast disabled.
+- Exact next action: none for delivery; signing and broadcasting intentionally remain outside scope.
 - Safety: zero signing, broadcasting, funding, transactions, contract deployments or PHRS spending.
