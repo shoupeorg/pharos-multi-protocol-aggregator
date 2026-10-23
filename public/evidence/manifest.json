@@ -1,0 +1,50 @@
+{
+  "evidenceVersion": "1.0",
+  "engineVersion": "multi-protocol-aggregator/1.0.0",
+  "capturedAt": "2026-10-23T18:01:36.549Z",
+  "readOnly": true,
+  "unsignedOnly": true,
+  "executed": false,
+  "runs": [
+    {
+      "name": "live-query",
+      "file": "live-query.json",
+      "status": "COMPLETE",
+      "capturedAt": "2026-10-23T18:00:23.640Z",
+      "block": 21045829,
+      "available": 2,
+      "planStatus": null,
+      "transactions": 0
+    },
+    {
+      "name": "live-deposit",
+      "file": "live-deposit.json",
+      "status": "CONDITIONAL",
+      "capturedAt": "2026-10-23T18:00:55.176Z",
+      "block": 21045861,
+      "available": 2,
+      "planStatus": "CONDITIONAL",
+      "transactions": 2
+    },
+    {
+      "name": "live-withdrawal",
+      "file": "live-withdrawal.json",
+      "status": "PREPARED",
+      "capturedAt": "2026-10-23T18:01:23.792Z",
+      "block": 21045888,
+      "available": 2,
+      "planStatus": "PREPARED",
+      "transactions": 1
+    },
+    {
+      "name": "live-outage",
+      "file": "live-outage.json",
+      "status": "PARTIAL",
+      "capturedAt": "2026-10-23T18:01:36.534Z",
+      "block": 21045915,
+      "available": 1,
+      "planStatus": null,
+      "transactions": 0
+    }
+  ]
+}

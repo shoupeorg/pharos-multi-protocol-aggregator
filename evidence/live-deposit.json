@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": "multi-protocol-aggregator/1.0.0",
+  "capturedAt": "2026-10-23T18:00:55.176Z",
+  "readOnly": true,
+  "unsignedOnly": true,
+  "noBroadcast": true,
+  "input": {
+    "request": "Where should I deposit 10 USDC?",
+    "intent": "deposit",
+    "account": "0x15ddce897d76ac39c188ade4d353711a60395315",
+    "receiver": "0x15ddce897d76ac39c188ade4d353711a60395315",
+    "amount": "10",
+    "asset": "USDC",
+    "horizonDays": 30,
+    "objective": "highest-net-value"
+  },
+  "interpreted": {
+    "status": "OK",
+    "intent": "deposit",
+    "request": "Where should I deposit 10 USDC?",
+    "account": "0x15ddce897d76ac39c188ade4d353711a60395315",
+    "receiver": "0x15ddce897d76ac39c188ade4d353711a60395315",
+    "amount": "10",
+    "asset": "USDC",
+    "horizonDays": 30,
+    "objective": "highest-net-value",
+    "minOutput": null,
+    "costs": {}
+  },
+  "snapshot": {
+    "schemaVersion": 1,
+    "engineVersion": "multi-protocol-aggregator/1.0.0",
+    "network": "Pharos Pacific Mainnet",
+    "chainId": 1672,
+    "mcpEndpoint": "https://mcp.pharos.xyz/mcp",
+    "mcpTools": [
+      "get_chain_info",
+      "get_block_number",
+      "get_balance",
+      "get_transaction_count",
+      "get_gas_price",
+      "get_block",
+      "get_transaction",
+      "get_transaction_receipt",
+      "get_code",
+      "get_storage_at",
+      "eth_call",
+      "estimate_gas",
+      "get_logs",
+      "send_raw_transaction"
+    ],
+    "block": {
+      "number": 21045861,
+      "timestamp": 1792778436,
+      "hash": "0x163be24ecdb773ea8613a542d47e26849797116d12c64232f4774d451bd4a0a9"
+    },
+    "account": "0x15ddce897d76ac39c188ade4d353711a60395315",
+    "venues": [
+      {
+        "id": "morpho-rockawayx",
+        "protocol": "Morpho",
+        "name": "RockawayX USDC V2",
+        "address": "0x047cd0a91e9b92ed979189a6c8a120bf280f02e5",
+        "status": "AVAILABLE",
+        "observedAt": "2026-10-23T18:00:36.000Z",
+        "blockNumber": 21045861,
+        "asset": {
+          "symbol": "USDC",
+          "address": "0xc879c018db60520f4355c26ed1a6d572cdac1815",
+          "decimals": 6
+        },
+        "share": {
+          "symbol": "roxUSDC",
+          "decimals": 18
+        },
+        "type": "ERC-4626 synchronous",
+        "position": {
+          "sharesRaw": "0",
+          "sharesFormatted": "0",
+          "assetsRaw": "0",
+          "assetsFormatted": "0",
+          "sourceIds": [
+            "morpho-rockawayx-SRC-2"
+          ]
+        },
+        "state": {
+          "totalAssetsRaw": "11121414416115",
+          "totalSupplyRaw": "11042511326034730568182805",
+          "deadSharesRaw": "1000000000000000000",
+          "depositAvailability": "ACCOUNT_SPECIFIC",
+          "withdrawAvailability": "ACCOUNT_SPECIFIC",
+          "limitsNote": "Morpho Vault V2 max* views return zero by design; capacity, liquidity-adapter and gate constraints require fresh account-specific validation."
+        },
+        "quote": {
+          "assetAmountRaw": "10000000",
+          "previewDepositSharesRaw": "9929132405817484416",
+          "previewWithdrawSharesRaw": "9929132405817484417",
+          "blockNumber": 21045861
+        },
+        "account": {
+          "usdcBalanceRaw": "1800000029",
+          "allowanceRaw": "0",
+          "sourceIds": [
+            "morpho-rockawayx-SRC-4"
+          ]
+        },
+        "rate": {
+          "kind": "vault share-value change over the observed period",
+          "fixedSharesRaw": "1000000000000000000",
+          "startAssetsRaw": "1007011",
+          "endAssetsRaw": "1007137",
+          "changePpm": "125",
+          "changePercent": "0.0125",
+          "startBlock": 20945861,
+          "startTimestamp": 1792687031,
+          "endBlock": 21045861,
+          "endTimestamp": 1792778436,
+          "elapsedSeconds": 91405,
+          "sourceIds": [
+            "morpho-rockawayx-SRC-3"
+          ],
+          "guaranteed": false,
+          "annualized": false
+        },
+        "sources": [
+          "https://campaigns.morpho.org/opportunities/11686569320310112064",
+          "https://docs.morpho.org/developers/earn/tutorials/assets-flow/"
+        ],
+        "observations": [
+          {
+            "id": "morpho-rockawayx-SRC-1",
+            "venueId": "morpho-rockawayx",
+            "kind": "identity",
+            "method": "get_code/asset/decimals",
+            "raw": "21808/0xc879c018db60520f4355c26ed1a6d572cdac1815/18",
+            "blockNumber": 21045861,
+            "timestamp": 1792778436
+          },
+          {
+            "id": "morpho-rockawayx-SRC-2",
+            "venueId": "morpho-rockawayx",
+            "kind": "position",
+            "method": "balanceOf/convertToAssets",
+            "raw": "0/0",
+            "blockNumber": 21045861,
+            "timestamp": 1792778436
+          },
+          {
+            "id": "morpho-rockawayx-SRC-3",
+            "venueId": "morpho-rockawayx",
+            "kind": "rate",
+            "method": "convertToAssets",
+            "raw": "1007011/1007137",
+            "blockNumber": 21045861,
+            "timestamp": 1792778436,
+            "startBlock": 20945861,
+            "startTimestamp": 1792687031,
+            "unit": "ppm fixed-share change"
+          },
+          {
+            "id": "morpho-rockawayx-SRC-4",
+            "venueId": "morpho-rockawayx",
+            "kind": "eligibility",
+            "method": "balanceOf/allowance",
+            "raw": "1800000029/0",
+            "blockNumber": 21045861,
+            "timestamp": 1792778436
+          }
+        ],
+        "readStatus": "LIVE"
+      },
+      {
+        "id": "morpho-sharpbyte",
+        "protocol": "Morpho",
+        "name": "SharpByte USDC Pharos Ecosystem",
+        "address": "0x15c25ED222fc498f672af5c3adb5ED0a96E1AFf1",
+        "status": "AVAILABLE",
+        "observedAt": "2026-10-23T18:00:36.000Z",
+        "blockNumber": 21045861,
+        "asset": {
+          "symbol": "USDC",
+          "address": "0xc879c018db60520f4355c26ed1a6d572cdac1815",
+          "decimals": 6
+        },
+        "share": {
+          "symbol": "sbUSDC-ph-eco",
+          "decimals": 18
+        },
+        "type": "ERC-4626 synchronous",
+        "position": {
+          "sharesRaw": "0",
+          "sharesFormatted": "0",
+          "assetsRaw": "0",
+          "assetsFormatted": "0",
+          "sourceIds": [
+            "morpho-sharpbyte-SRC-2"
+          ]
+        },
+        "state": {
+          "totalAssetsRaw": "2248964326743",
+          "totalSupplyRaw": "2243062852856625730479815",
+          "deadSharesRaw": "1000000000000000000",
+          "depositAvailability": "ACCOUNT_SPECIFIC",
+          "withdrawAvailability": "ACCOUNT_SPECIFIC",
+          "limitsNote": "Morpho Vault V2 max* views return zero by design; capacity, liquidity-adapter and gate constraints require fresh account-specific validation."
+        },
+        "quote": {
+          "assetAmountRaw": "10000000",
+          "previewDepositSharesRaw": "9974105979523258043",
+          "previewWithdrawSharesRaw": "9974105979523258044",
+          "blockNumber": 21045861
+        },
+        "account": {
+          "usdcBalanceRaw": "1800000029",
+          "allowanceRaw": "0",
+          "sourceIds": [
+            "morpho-sharpbyte-SRC-4"
+          ]
+        },
+        "rate": {
+          "kind": "vault share-value change over the observed period",
+          "fixedSharesRaw": "1000000000000000000",
+          "startAssetsRaw": "1002454",
+          "endAssetsRaw": "1002596",
+          "changePpm": "141",
+          "changePercent": "0.0141",
+          "startBlock": 20945861,
+          "startTimestamp": 1792687031,
+          "endBlock": 21045861,
+          "endTimestamp": 1792778436,
+          "elapsedSeconds": 91405,
+          "sourceIds": [
+            "morpho-sharpbyte-SRC-3"
+          ],
+          "guaranteed": false,
+          "annualized": false
+        },
+        "sources": [
+          "https://campaigns.morpho.org/opportunities/6848818814763389816",
+          "https://docs.morpho.org/developers/earn/tutorials/assets-flow/"
+        ],
+        "observations": [
+          {
+            "id": "morpho-sharpbyte-SRC-1",
+            "venueId": "morpho-sharpbyte",
+            "kind": "identity",
+            "method": "get_code/asset/decimals",
+            "raw": "21808/0xc879c018db60520f4355c26ed1a6d572cdac1815/18",
+            "blockNumber": 21045861,
+            "timestamp": 1792778436
+          },
+          {
+            "id": "morpho-sharpbyte-SRC-2",
+            "venueId": "morpho-sharpbyte",
+            "kind": "position",
+            "method": "balanceOf/convertToAssets",
+            "raw": "0/0",
+            "blockNumber": 21045861,
+            "timestamp": 1792778436
+          },
+          {
+            "id": "morpho-sharpbyte-SRC-3",
+            "venueId": "morpho-sharpbyte",
+            "kind": "rate",
+            "method": "convertToAssets",
+            "raw": "1002454/1002596",
+            "blockNumber": 21045861,
+            "timestamp": 1792778436,
+            "startBlock": 20945861,
+            "startTimestamp": 1792687031,
+            "unit": "ppm fixed-share change"
+          },
+          {
+            "id": "morpho-sharpbyte-SRC-4",
+            "venueId": "morpho-sharpbyte",
+            "kind": "eligibility",
+            "method": "balanceOf/allowance",
+            "raw": "1800000029/0",
+            "blockNumber": 21045861,
+            "timestamp": 1792778436
+          }
+        ],
+        "readStatus": "LIVE"
+      }
+    ],
+    "readOnly": true
+  },
+  "routing": {
+    "status": "CONDITIONAL",
+    "interpreted": {
+      "status": "OK",
+      "intent": "deposit",
+      "request": "Where should I deposit 10 USDC?",
+      "account": "0x15ddce897d76ac39c188ade4d353711a60395315",
+      "receiver": "0x15ddce897d76ac39c188ade4d353711a60395315",
+      "amount": "10",
+      "asset": "USDC",
+      "horizonDays": 30,
+      "objective": "highest-net-value",
+      "minOutput": null,
+      "costs": {}
+    },
+    "candidates": [
+      {
+        "venueId": "morpho-rockawayx",
+        "name": "RockawayX USDC V2",
+        "status": "AVAILABLE",
+        "eligible": true,
+        "reason": "Eligible from pinned balance/share reads. Score is projected from observed fixed-share change over the selected horizon minus disclosed USDC-denominated cost assumptions.",
+        "rate": {
+          "kind": "vault share-value change over the observed period",
+          "fixedSharesRaw": "1000000000000000000",
+          "startAssetsRaw": "1007011",
+          "endAssetsRaw": "1007137",
+          "changePpm": "125",
+          "changePercent": "0.0125",
+          "startBlock": 20945861,
+          "startTimestamp": 1792687031,
+          "endBlock": 21045861,
+          "endTimestamp": 1792778436,
+          "elapsedSeconds": 91405,
+          "sourceIds": [
+            "morpho-rockawayx-SRC-3"
+          ],
+          "guaranteed": false,
+          "annualized": false
+        },
+        "modeledFinalRaw": "10005357",
+        "modeledScoreRaw": "10005357",
+        "costRaw": "0",
+        "observedNotGuaranteed": true
+      },
+      {
+        "venueId": "morpho-sharpbyte",
+        "name": "SharpByte USDC Pharos Ecosystem",
+        "status": "AVAILABLE",
+        "eligible": true,
+        "reason": "Eligible from pinned balance/share reads. Score is projected from observed fixed-share change over the selected horizon minus disclosed USDC-denominated cost assumptions.",
+        "rate": {
+          "kind": "vault share-value change over the observed period",
+          "fixedSharesRaw": "1000000000000000000",
+          "startAssetsRaw": "1002454",
+          "endAssetsRaw": "1002596",
+          "changePpm": "141",
+          "changePercent": "0.0141",
+          "startBlock": 20945861,
+          "startTimestamp": 1792687031,
+          "endBlock": 21045861,
+          "endTimestamp": 1792778436,
+          "elapsedSeconds": 91405,
+          "sourceIds": [
+            "morpho-sharpbyte-SRC-3"
+          ],
+          "guaranteed": false,
+          "annualized": false
+        },
+        "modeledFinalRaw": "10006042",
+        "modeledScoreRaw": "10006042",
+        "costRaw": "0",
+        "observedNotGuaranteed": true
+      }
+    ],
+    "coverage": {
+      "available": 2,
+      "total": 2,
+      "failed": []
+    },
+    "decision": {
+      "venueId": "morpho-sharpbyte",
+      "venueName": "SharpByte USDC Pharos Ecosystem",
+      "reason": "Selected the highest modeled final USDC value among 2 eligible live candidate(s) for objective highest-net-value. All configured venues were observed.",
+      "limitations": [
+        "Gas is denominated in PROS and no verified PROS/USDC conversion is used; Morpho V2 capacity/gates require execution-time validation."
+      ]
+    },
+    "plan": {
+      "id": "614607b2-a8c4-4b7e-b4a6-1e1f2a244749",
+      "status": "CONDITIONAL",
+      "venueId": "morpho-sharpbyte",
+      "venueName": "SharpByte USDC Pharos Ecosystem",
+      "action": "deposit",
+      "amountRaw": "10000000",
+      "amountFormatted": "10",
+      "asset": {
+        "symbol": "USDC",
+        "address": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815",
+        "decimals": 6
+      },
+      "owner": "0x15ddce897d76ac39c188ade4d353711a60395315",
+      "receiver": "0x15ddce897d76ac39c188ade4d353711a60395315",
+      "approvalNeeded": true,
+      "transactions": [
+        {
+          "kind": "APPROVE",
+          "chainId": 1672,
+          "from": "0x15ddce897d76ac39c188ade4d353711a60395315",
+          "to": "0xc879c018db60520f4355c26ed1a6d572cdac1815",
+          "value": "0",
+          "data": "0x095ea7b300000000000000000000000015c25ed222fc498f672af5c3adb5ed0a96e1aff10000000000000000000000000000000000000000000000000000000000989680",
+          "decoded": {
+            "function": "approve(0x15c25ED222fc498f672af5c3adb5ED0a96E1AFf1, 10000000)",
+            "spender": "0x15c25ED222fc498f672af5c3adb5ED0a96E1AFf1",
+            "amountRaw": "10000000",
+            "bounded": true
+          },
+          "gasEstimate": "71466",
+          "validation": "SIMULATED",
+          "roundTrip": {
+            "function": "approve",
+            "arguments": [
+              "0x15c25ed222fc498f672af5c3adb5ed0a96e1aff1",
+              "10000000"
+            ]
+          }
+        },
+        {
+          "kind": "DEPOSIT",
+          "chainId": 1672,
+          "from": "0x15ddce897d76ac39c188ade4d353711a60395315",
+          "to": "0x15c25ed222fc498f672af5c3adb5ed0a96e1aff1",
+          "value": "0",
+          "data": "0x6e553f65000000000000000000000000000000000000000000000000000000000098968000000000000000000000000015ddce897d76ac39c188ade4d353711a60395315",
+          "decoded": {
+            "function": "deposit(10000000, 0x15ddce897d76ac39c188ade4d353711a60395315)",
+            "assetAmountRaw": "10000000",
+            "receiver": "0x15ddce897d76ac39c188ade4d353711a60395315"
+          },
+          "gasEstimate": "UNKNOWN",
+          "validation": "CONDITIONAL",
+          "roundTrip": {
+            "function": "deposit",
+            "arguments": [
+              "10000000",
+              "0x15ddce897d76ac39c188ade4d353711a60395315"
+            ]
+          },
+          "validationReason": "execution reverted: "
+        }
+      ],
+      "quoteBlock": 21045861,
+      "quoteTimestamp": 1792778436,
+      "issuedAt": 1792778436,
+      "expiresAt": 1792778736,
+      "freshnessSeconds": 300,
+      "preconditions": [
+        "Revalidate balance, allowance, capacity/gates, liquidity and gas immediately before signing.",
+        "Gas is denominated in PROS and no verified PROS/USDC conversion is used; Morpho V2 capacity/gates require execution-time validation."
+      ],
+      "expectedPostconditions": [
+        "USDC decreases by the deposited assets.",
+        "Vault shares are minted to receiver."
+      ],
+      "executed": false
+    }
+  },
+  "evidenceName": "live-deposit",
+  "historical": true
+}

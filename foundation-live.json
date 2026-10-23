@@ -1,0 +1,175 @@
+{
+  "chain": {
+    "name": "Pharos",
+    "chainId": 1672,
+    "chainIdHex": "0x688",
+    "expectedChainId": 1672,
+    "chainIdMatches": true,
+    "latestBlock": "21028432",
+    "latestBlockHex": "0x140de50",
+    "nativeSymbol": "PROS",
+    "clientVersion": "portal/1.0.0",
+    "rpcUrl": "https://rpc.pharos.xyz"
+  },
+  "block": 21028432,
+  "tools": [
+    "get_chain_info",
+    "get_block_number",
+    "get_balance",
+    "get_transaction_count",
+    "get_gas_price",
+    "get_block",
+    "get_transaction",
+    "get_transaction_receipt",
+    "get_code",
+    "get_storage_at",
+    "eth_call",
+    "estimate_gas",
+    "get_logs",
+    "send_raw_transaction"
+  ],
+  "account": "0x15ddce897d76ac39c188ade4d353711a60395315",
+  "venues": [
+    {
+      "id": "centrifuge-jtrsy",
+      "address": "0x160e0dd4c4f693b05eca83bc2ec6fd51954fc434",
+      "codeBytes": 12018,
+      "values": {
+        "asset": {
+          "ok": true,
+          "value": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815"
+        },
+        "share": {
+          "ok": true,
+          "value": "0xC18e6f730896971a79D748E8deA61067A9Bc6040"
+        },
+        "decimals": {
+          "ok": false,
+          "error": "execution reverted: "
+        },
+        "balanceOf": {
+          "ok": false,
+          "error": "execution reverted: "
+        },
+        "maxDeposit": {
+          "ok": true,
+          "value": "0"
+        },
+        "maxWithdraw": {
+          "ok": true,
+          "value": "0"
+        },
+        "maxRedeem": {
+          "ok": true,
+          "value": "0"
+        },
+        "previewDeposit": {
+          "ok": false,
+          "error": "execution reverted: "
+        },
+        "previewWithdraw": {
+          "ok": false,
+          "error": "execution reverted: "
+        },
+        "isPermissioned": {
+          "ok": true,
+          "value": "false"
+        }
+      }
+    },
+    {
+      "id": "morpho-rockawayx",
+      "address": "0x047cd0a91e9b92ed979189a6c8a120bf280f02e5",
+      "codeBytes": 21808,
+      "values": {
+        "asset": {
+          "ok": true,
+          "value": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815"
+        },
+        "share": {
+          "ok": false,
+          "error": "execution reverted: "
+        },
+        "decimals": {
+          "ok": true,
+          "value": "18"
+        },
+        "balanceOf": {
+          "ok": true,
+          "value": "0"
+        },
+        "maxDeposit": {
+          "ok": true,
+          "value": "0"
+        },
+        "maxWithdraw": {
+          "ok": true,
+          "value": "0"
+        },
+        "maxRedeem": {
+          "ok": true,
+          "value": "0"
+        },
+        "previewDeposit": {
+          "ok": true,
+          "value": "992934602072738717"
+        },
+        "previewWithdraw": {
+          "ok": true,
+          "value": "992934602072738718"
+        },
+        "isPermissioned": {
+          "ok": false,
+          "error": "execution reverted: "
+        }
+      }
+    },
+    {
+      "id": "morpho-sharpbyte",
+      "address": "0x15c25ED222fc498f672af5c3adb5ED0a96E1AFf1",
+      "codeBytes": 21808,
+      "values": {
+        "asset": {
+          "ok": true,
+          "value": "0xC879C018dB60520F4355C26eD1a6D572cdAC1815"
+        },
+        "share": {
+          "ok": false,
+          "error": "execution reverted: "
+        },
+        "decimals": {
+          "ok": true,
+          "value": "18"
+        },
+        "balanceOf": {
+          "ok": true,
+          "value": "0"
+        },
+        "maxDeposit": {
+          "ok": true,
+          "value": "0"
+        },
+        "maxWithdraw": {
+          "ok": true,
+          "value": "0"
+        },
+        "maxRedeem": {
+          "ok": true,
+          "value": "0"
+        },
+        "previewDeposit": {
+          "ok": true,
+          "value": "997436243589940185"
+        },
+        "previewWithdraw": {
+          "ok": true,
+          "value": "997436243589940186"
+        },
+        "isPermissioned": {
+          "ok": false,
+          "error": "execution reverted: "
+        }
+      }
+    }
+  ]
+}
